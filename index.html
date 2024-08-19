@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <article id="cad">
+        <form name="cadastro">
+            <fieldset>
+                <legend>HealthClinic</legend>
+                <div class="campo">
+                    <label for="nome">
+                        Nome:
+                    </label>
+                    <input type="text" id="nome" name="nome" />
+                </div>
+
+                
+                <div class="campo">
+                    <label for="date" class="label">Data</label>
+                    <input type="date" id="date" name="date" required />
+                </div>
+
+                <label for="horario">Horário</label>
+                <div class="campo">
+                    <input type="radio" class="horario" name="horario" value="9"> 09h00
+                    <input type="radio" class="horario" name="horario" value="10"> 10h00
+                    <input type="radio" class="horario" name="horario" value="11"> 11h00
+                    <input type="radio" class="horario" name="horario" value="12"> 12h00
+                </div>
+                <div class="campo">
+                    <input type="radio" class="horario" name="horario" value="13"> 13h00
+                    <input type="radio" class="horario" name="horario" value="14"> 14h00
+                    <input type="radio" class="horario" name="horario" value="15"> 15h00
+                    <input type="radio" class="horario" name="horario" value="16"> 16h00
+                    <input type="radio" class="horario" name="horario" value="17"> 17h00
+                    <input type="radio" class="horario" name="horario" value="18"> 18h00
+                </div>
+                <input type="button" id="btnGerar" value="Gerar Objeto" />
+            </fieldset>
+        </form>
+    </article>
+    <section id="sc-marcado">
+        <p id="marcado">Marcados:</p>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
