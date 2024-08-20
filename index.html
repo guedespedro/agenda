@@ -7,13 +7,16 @@
     <title>Agenda</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js" defer></script> 
+    <link rel="shortcut icon" href="img/calendário.jpg">
 </head>
 
 <body>
-    <article id="cad">
+    <article id="agenda">
+        <section id="cad">
         <form name="cadastro">
             <fieldset>
-                <legend>HealthClinic</legend>
+                <legend>HealthLife Clinic</legend>
+                <p>Complete os campos e agenda uma consulta</p>
                 <div class="campo">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" />
@@ -24,7 +27,7 @@
                 </div>
                 <label for="horario">Horário:</label>
                 <div id="horarios" class="campo">
-                    <div class="horarios-row">
+                    <div class="horarios-row" id="manha">
                         <input type="radio" id="horario9" class="horario" name="horario" value="9">
                         <label for="horario9">09h00</label>
                         
@@ -40,8 +43,7 @@
                         <label for="horario13">13h00</label>
                         
                     </div>
-                    <div class="horarios-row">
-                    
+                    <div class="horarios-row" id="tarde">
                         <input type="radio" id="horario14" class="horario" name="horario" value="14">
                         <label for="horario14">14h00</label>
                         
@@ -58,14 +60,16 @@
                         <label for="horario18">18h00</label>
                     </div>
                 </div>
-                <input type="button" id="btnGerar" value="Gerar Objeto" />
+                <input type="button" id="btnGerar" value="Marcar Consulta" />
             </fieldset>
         </form>
-    </article>
+    </section>
     <section id="sc-marcado">
         <p id="marcado">Marcados:</p>
     </section>
-    <input type="button" id="btnReset" value="Desmarcar Consultas">
+    </article>
+    
+    <!--Botão para apagar todas as consultas: <input type="button" id="btnReset" value="Desmarcar Consultas">-->
 </body>
 
 </html>

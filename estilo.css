@@ -1,20 +1,24 @@
 body{
     background-color: rgb(133, 175, 175);
+    color: rgb(0, 0, 0);
 }
 #cad{
     width: 39%;
     margin-top: 1.5vw;
     margin-left: 1.5vw;
-    background-color: rgb(51, 51, 93);
+    background-color: rgb(85, 85, 104);
     padding: 1.5vw;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5%;
     border-collapse: collapse;
+    height: min-content;
 }
 .campo {
     margin-bottom: 15px;
 }
-
+fieldset{
+    padding: 2.5vw;
+}
 .horarios-row {
     display: flex;
     margin-bottom: 10px;
@@ -29,4 +33,28 @@ input[type="radio"].horario:disabled + label {
     color: red; 
     text-decoration: line-through; 
     cursor: not-allowed; 
+}
+#agenda{
+    display: flex;  
+}
+#sc-marcado{
+    padding: 2.5vw;
+    border: 2px dashed rgb(0, 217, 255);
+    margin: 2.5vw;
+    border-radius: 5%;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 940px) {
+    body{
+        display:block;
+    }
+    #agenda{
+        display: block;
+    }
+    #cad{
+        width: 95%;
+    }
+
 }
