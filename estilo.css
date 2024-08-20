@@ -11,6 +11,22 @@ body{
     border-radius: 5%;
     border-collapse: collapse;
 }
-.campo{
-    display: block;
+.campo {
+    margin-bottom: 15px;
+}
+
+.horarios-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="radio"].horario {
+    margin-right: 5px;
+}
+
+
+input[type="radio"].horario:disabled + label {
+    color: red; 
+    text-decoration: line-through; 
+    cursor: not-allowed; 
 }
