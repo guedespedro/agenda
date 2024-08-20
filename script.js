@@ -45,7 +45,7 @@ document.querySelector("#btnGerar").addEventListener("click", () => {
     let marcadas = JSON.parse(localStorage.getItem('consultas')) || [];
     marcadas.push(consulta);
     localStorage.setItem('consultas', JSON.stringify(marcadas));
-s
+
     desabilitarHorarios(marcadas);
 });
 
